@@ -66,8 +66,7 @@ export default function Home() {
                 transition={{ delay: 0.3 }}
                 className="text-5xl md:text-8xl font-serif italic text-white leading-[1.1] tracking-normal px-2"
               >
-                Búsqueda de Tesoros <br /> 
-                <span className="text-[#5A5A40] not-italic font-sans font-bold uppercase text-3xl md:text-5xl block mt-8 tracking-[0.4em]">IES Lucía de Medrano</span>
+                Búsqueda de Tesoros<br /><span className="text-[#5A5A40] not-italic font-sans font-bold uppercase text-3xl md:text-5xl block mt-8 tracking-[0.4em]">IES Lucía de Medrano</span>
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -155,10 +154,12 @@ export default function Home() {
                       href={item.treasureUrl} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-[#5A5A40] font-bold text-sm hover:underline"
+                      title="Se abrirá en una pestaña nueva"
+                      className="inline-flex items-center gap-2 text-[#5A5A40] font-bold text-sm hover:underline group/link"
                     >
-                      Accede al TESORO
-                      <ArrowRight className="w-4 h-4" />
+                      <span>Accede al TESORO</span>
+                      <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+                      <span className="text-[10px] opacity-40 font-normal">(abre pestaña nueva)</span>
                     </a>
                     
                     <div className="grid grid-cols-1 gap-2">

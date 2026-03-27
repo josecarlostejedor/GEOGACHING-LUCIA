@@ -106,7 +106,7 @@ export default function Info() {
               </li>
               <li className="flex gap-4">
                 <span className="text-[#5A5A40] font-mono font-bold">04</span>
-                <span>Regístrate en <a href="https://www.geocaching.com/" target="_blank" rel="noopener noreferrer" className="text-[#5A5A40] underline">https://www.geocaching.com/</a> y puedes acceder a todos los tesoros del mundo.</span>
+                <span>Regístrate en <a href="https://www.geocaching.com/" target="_blank" rel="noopener noreferrer" className="text-[#5A5A40] underline">geocaching.com</a> <span className="text-[10px] opacity-40">(abre pestaña nueva)</span> y podrás acceder a todos los tesoros del mundo.</span>
               </li>
               <li className="flex gap-4">
                 <span className="text-[#5A5A40] font-mono font-bold">05</span>
