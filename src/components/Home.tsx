@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { MapPin, Star, ArrowRight, ShieldCheck, History, BookOpen, Trophy, Landmark, Radio, Globe, RotateCcw } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
-import { cn } from '../lib/utils';
-import { useMission } from '../context/MissionContext';
+import { cn } from '@/src/lib/utils';
+import { useMission } from '@/src/context/MissionContext';
 
 export default function Home() {
   const navigate = useNavigate();
