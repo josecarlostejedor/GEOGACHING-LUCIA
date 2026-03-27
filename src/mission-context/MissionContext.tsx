@@ -61,8 +61,9 @@ export function MissionProvider({ children }: { children: React.ReactNode }) {
         return {
           ...defaultData,
           ...parsed,
-          isActive: false,
-          startTime: null,
+          // Persist active state if it was active
+          isActive: parsed.isActive || false,
+          startTime: parsed.startTime || null,
           elapsedTime: parsed.elapsedTime || 0,
         };
       } catch (e) {
@@ -81,8 +82,10 @@ export function MissionProvider({ children }: { children: React.ReactNode }) {
       totalPoints: mission.totalPoints || 0,
       totalTime: mission.totalTime || 0,
       elapsedTime: mission.elapsedTime || 0,
+      isActive: mission.isActive,
+      startTime: mission.startTime,
     }));
-  }, [mission.student, mission.companion, mission.completedTreasures, mission.totalPoints, mission.totalTime, mission.elapsedTime]);
+  }, [mission]);
 
   useEffect(() => {
     let interval: any;
