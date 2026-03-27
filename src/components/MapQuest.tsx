@@ -114,7 +114,7 @@ export default function MapQuest() {
   };
 
   const syncDataToSheets = async (currentExperience: string, treasure: any, earnedPoints: number) => {
-    const sheetsUrl = (import.meta as any).env.VITE_GOOGLE_SHEETS_URL;
+    const sheetsUrl = import.meta.env.VITE_GOOGLE_SHEETS_URL;
     
     console.log("🔍 Depuración de Sincronización:");
     console.log("   - URL configurada:", sheetsUrl);
