@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { useNavigate } from 'react-router-dom';
 import { User, Users, ArrowRight, UserPlus } from 'lucide-react';
-import { useMission } from '@/src/context/MissionContext.tsx';
+import { useMission } from '@/src/context/MissionContext';
 
 export default function Registration() {
   const navigate = useNavigate();

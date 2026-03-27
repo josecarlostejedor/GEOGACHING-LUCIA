@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { User, Settings, Award, Calendar, MapPin, LogOut } from 'lucide-react';
-import { cn } from '@/src/lib/utils.ts';
+import { cn } from '@/src/lib/utils';
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
-import { useMission } from '@/src/context/MissionContext.tsx';
+import { useMission } from '@/src/context/MissionContext';
 
 const COLORS = ['#5A5A40', '#E4E3E0'];
 

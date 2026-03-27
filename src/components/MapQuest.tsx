@@ -2,8 +2,8 @@ import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MapPin, Navigation, CheckCircle2, Lock, Info, Star, Clock, Camera, FileText, X, Home, ArrowRight, RotateCcw } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { cn } from '@/src/lib/utils.ts';
-import { useMission } from '@/src/context/MissionContext.tsx';
+import { cn } from '@/src/lib/utils';
+import { useMission } from '@/src/context/MissionContext';
 import { jsPDF } from 'jspdf';
 
 const TREASURES = [

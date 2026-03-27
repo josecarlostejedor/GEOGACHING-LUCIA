@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Trophy, Medal, ArrowUp, ArrowDown, Minus } from 'lucide-react';
-import { cn } from '@/src/lib/utils.ts';
-import { useMission } from '@/src/context/MissionContext.tsx';
+import { cn } from '@/src/lib/utils';
+import { useMission } from '@/src/context/MissionContext';
 
 const MOCK_STUDENTS = [
   { name: "Lucía García", points: 0.65, treasures: 3, trend: "up" },
