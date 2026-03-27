@@ -5,14 +5,14 @@
 
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from '@/src/components/Layout.tsx';
-import Home from '@/src/components/Home.tsx';
-import Info from '@/src/components/Info.tsx';
-import MapQuest from '@/src/components/MapQuest.tsx';
-import Leaderboard from '@/src/components/Leaderboard.tsx';
-import Profile from '@/src/components/Profile.tsx';
-import Registration from '@/src/components/Registration.tsx';
-import { MissionProvider } from '@/src/context/MissionContext.tsx';
+import Layout from './components/Layout.tsx';
+import Home from './components/Home.tsx';
+import Info from './components/Info.tsx';
+import MapQuest from './components/MapQuest.tsx';
+import Leaderboard from './components/Leaderboard.tsx';
+import Profile from './components/Profile.tsx';
+import Registration from './components/Registration.tsx';
+import { MissionProvider } from './mission-context/MissionContext.tsx';
 
 export default function App() {
   useEffect(() => {
